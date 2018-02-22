@@ -1,0 +1,193 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Anirudh} \headerlastnamestyle{Oppiliappan} \\
+	\vspace{2mm}
+	{\faEnvelope\ icyph0x@protonmail.com} | {\faMobile\ 9986951911} | {\faMapMarker\ Chennai, IN} | {\faLink\ https://ph0x.me}
+\end{center}
+\cvsection{Links}
+\begin{cvhonors}
+	\cvhonor
+	{GitHub}
+	{https://github.com/icyphox}
+	{}
+	{}
+	\cvhonor
+	{Keybase}
+	{https://keybase.io/icyphox \textbar{} FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4}
+	{}
+	{}
+	\cvhonor
+	{Twitter}
+	{https://twitter.com/icyphox}
+	{}
+	{}
+\end{cvhonors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{B.Tech in Computer Science}
+	{SRM Institute of Science and Technology}
+	{Chennai, IN}
+	{July 2017 – Present}
+	{}
+	\cventry
+	{Grade 12}
+	{National Public School, HSR}
+	{Bangalore, IN}
+	{July 2015 – May 2017}
+	{}
+\end{cventries}
+
+\vspace{-2mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{A Twitter bot that generates Markov chains}
+	{Marko}
+	{Python}
+	{github.com/icyphox/marko}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{Milan Campus Ambassador web app}
+	{Milan Campus Ambassador}
+	{Angular2}
+	{cr.srmmilan.in}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{SRM Innovation and Incubation Center}
+	{SIIC}
+	{PHP, MySQL, HTML/CSS}
+	{srmiic.com}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{Successfully built and booted Linux From Scratch}
+	{LFS}
+	{Shell}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{NPS HSR\textquotesingle{}s parliament voting system}
+	{School Voting System}
+	{PHP, HTML, JS, MDL}
+	{github.com/icyphox/nps-dev}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A teacher-student interaction platform}
+	{NPS Connect}
+	{PHP, MySQL, HTML, Materialize CSS}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{Built a custom kernel for the Nexus 5 (hammerhead) using the Hyper toolchain}
+	{The Icykernel}
+	{HyperTC, Shell}
+	{github.com/icyphox/theicykernel}
+	{}
+	
+	\vspace{-5mm}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{ Python, Shell, C/C++, JS, GNU/Octave, PHP, HTML/CSS}} \\
+		Web Frameworks:  & {\skill{ Django, Angular2, Node.js, Ember,js, Vue.js, React, Hugo, Bootstrap, Materialize/MDL}} \\
+		Security and Forensics:  & {\skill{ Metasploit Framework, SET, Autopsy, The Sleuth Kit, Encase, SIFT, Kali Linux toolset}} \\
+		SysAdmin/DevOps:  & {\skill{ Unix tools/CLI, AWS, Digital Ocean, Git, TravisCI}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Cybersecurity}
+	{WebArch}
+	{Chennai, IN}
+	{January 2018 – Present}
+	{\begin{cvitems}
+		\item {Web application pentesting, securing API endpoints}
+		\item {Linux server adminstration}
+		\item {Creating organization security policies}
+		\end{cvitems}}
+	\cventry
+	{Web Developer}
+	{WebArch}
+	{Chennai, IN}
+	{September 2017 – Present}
+	{\begin{cvitems}
+		\item {Frontend and backend web development}
+		\item {Hosting and managing services}
+		\end{cvitems}}
+\end{cventries}
+\ 
+\end{document}
