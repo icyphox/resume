@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=1.0cm, top=1.0cm, right=1.0cm, bottom=1.0cm}
+\geometry{left=0.6cm, top=0.6cm, right=0.6cm, bottom=0.6cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -177,43 +177,43 @@
 \newfontfamily\headerfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-Italic,
+  ItalicFont=*-MediumItalic,
   BoldFont=*-Bold,
   BoldItalicFont=*-BoldItalic,
-]{Roboto}
+]{FiraSans}
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
-  UprightFont=*-Thin,
-  ItalicFont=*-ThinItalic,
+  UprightFont=*-Light,
+  ItalicFont=*-LightItalic,
   BoldFont=*-Medium,
   BoldItalicFont=*-MediumItalic,
-]{Roboto}
+]{FiraSans}
 
 % Set font for footer (default is Source Sans Pro)
 \newfontfamily\footerfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-It,
+  ItalicFont=*-LightItalic,
   BoldFont=*-Bold
-]{SourceSansPro}
+]{FiraSans}
 
 % Set font for body (default is Source Sans Pro)
 \newfontfamily\bodyfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-It,
+  ItalicFont=*-LightItalic,
   BoldFont=*-Bold,
-  BoldItalicFont=*-BoldIt
-]{SourceSansPro}
+  BoldItalicFont=*-BoldItalic
+]{FiraSans}
 
 \newfontfamily\bodyfontlight[
   Path=\@fontdir,
   UprightFont=*-Light,
-  ItalicFont=*-LightIt,
-  BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
-]{SourceSansPro}
+  ItalicFont=*-LightItalic,
+  BoldFont=*-SemiBold,
+  BoldItalicFont=*-SemiBoldItalic
+]{FiraSans}
 
 
 %-------------------------------------------------------------------------------
