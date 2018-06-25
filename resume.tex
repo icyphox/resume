@@ -35,7 +35,7 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 %% Color for highlight
 % Define your custom color if you don't like awesome colors
-\colorlet{awesome}{awesome-skyblue}
+\colorlet{awesome}{awesome-darknight}
 %\definecolor{awesome}{HTML}{CA63A8}
 %% Colors for text
 %\definecolor{darktext}{HTML}{414141}
@@ -58,12 +58,11 @@
 		{\faKey\ PGP: FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4}
 	\end{center} 
 \end{center} 
-\cvsection{Summary}
-\begin{center}
-	Information security and open source enthusaist, with interests in Linux, free software, and decentralized networks.
-	\urlstyle{same}
-	{\faGithub\ \url{https://github.com/icyphox}}
-\end{center}
+%\cvsection{Summary}
+%\begin{center}
+%	Information security researcher, Linux enthusiast and open sourcer. 
+%	View my projects and code at \urlstyle{same} {\faGithub\ \url{https://github.com/icyphox}}
+%\end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,14 +82,32 @@
 	{}
 \end{cventries}
 
-\vspace{-2mm}
+\vspace{-6mm}
+\cvsection{Interests}
+\vspace{3mm}
+	{\begin{cvitems}
+		\item {Web and Network Security}
+		\item {Digital Forensics}
+		\item {Decentralized Networks}
+		\item {Systems Adminstration}
+		\item {Scripting and Automation}
+	\end{cvitems}}
+
 \cvsection{Projects}
 \begin{cventries}
 	\cventry
-	{A basic implementation of Git in the Nim programming language}  
-	{Nit}
+	{A simple and minimal static site generator}
+	{Vite}
+	{Python, Jinja2}
+	{github.com/icyphox/vite}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A terminal string formatting library for Nim}
+	{Fab}
 	{Nim}
-	{github.com/icyphox/nit}
+	{github.com/icyphox/fab}
 	{}
 
 	\vspace{-5mm}
@@ -111,13 +128,14 @@
 
 	\vspace{-5mm}
 	\cventry
-	{A simple and minimal static site generator}
-	{Vite}
-	{Python, Jinja2}
-	{github.com/icyphox/vite}
+	{A basic implementation of Git in the Nim programming language}  
+	{Nit}
+	{Nim}
+	{github.com/icyphox/nit}
 	{}
-
+	
 	\vspace{-5mm}
+
 \end{cventries}
 
 \cvsection{Skills}
@@ -127,7 +145,7 @@
 	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
 		Programming Languages:  & {\skill{ Python, Shell, Nim, C, JS, PHP, HTML/CSS}} \\
 		Web Frameworks:  & {\skill{ Flask, Angular2, Hugo, Bootstrap, Materialize/MDL}} \\
-		Security: & {\skill{ Vulnerability Assessment, Web Security, Penetration Testing, Networking }} \\
+		Security: & {\skill{ Vulnerability Assessment, Web Security, Penetration Testing, Networking}} \\
 		Forensics: & {\skill{ Filesystems, Data Recovery}} \\
 		SysAdmin/DevOps:  & {\skill{ Unix tools/CLI, AWS, Digital Ocean, Git, TravisCI}} \\
 		\end{tabular}}}
@@ -136,7 +154,7 @@
 	{}
 \end{cventries}
 
-\vspace{-7mm}
+\vspace{-10mm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -146,28 +164,23 @@
 	{Web Security Intern}
 	{Sensei Technologies}
 	{Bangalore, IN}
-	{May 2018 - present}
+	{May 2018 - Present}
 	{\begin{cvitems}
-		\item {Using Burp Suite to test web apps}
-		\item {Providing solutions for mitigation of security threats}
+		\item {Web application security and vulnerability assesment}
+		\item {Automation of security testing by implementing CI integrations}
+		\item {Suggesting and implementing devsecops}
+		\item {Providing long-term solutions for mitigation of security threats}
 	\end{cvitems}}
 	\cventry
-	{Cybersecurity}
-	{WebArch}
-	{Chennai, IN}
-	{January 2018 – March 2018}
-	{\begin{cvitems}
-		\item {Web application pentesting, securing API endpoints}
-		\item {Linux server adminstration}
-		\item {Creating organization security policies}
-	\end{cvitems}}
-	\cventry
-	{Web Developer}
+	{Cybersecurity, Web Development}
 	{WebArch}
 	{Chennai, IN}
 	{September 2017 – March 2018}
 	{\begin{cvitems}
-		\item {Frontend and backend web development}
+		\item {Web application pentesting and vulnerability assesment}
+		\item {Linux server adminstration, devops}
+		\item {Creating organization security policies}
+		\item {Frontend and backend web development in Angular2}
 		\item {Hosting and managing services}
 	\end{cvitems}}
 \end{cventries}
