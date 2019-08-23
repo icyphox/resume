@@ -61,11 +61,8 @@ Keybase/\href{https://keybase.io/icyphox}{\bf icyphox}
 \location{Offensive Security}
 \location{Digital Forensics} 
 \location{Reverse Engineering} 
-\location{Threat Intelligence}
-\location{Physical Security}
 \location{Operational Security}
-\location{Backend Systems}
-\location{Free Software}
+\location{Tradecraft}
 \sectionsep
 
 
@@ -76,7 +73,7 @@ Keybase/\href{https://keybase.io/icyphox}{\bf icyphox}
 
 \section{Skills}
 \subsection{Programming}
-Python \textbullet{} C/C++ \textbullet{} NodeJS \textbullet{} Nim \textbullet{} Shell
+Python \textbullet{} C/C++ \textbullet{} Nim \textbullet{} Shell
 \sectionsep
 \subsection{Security}
 Metasploit \textbullet{} Burp Suite \textbullet{} other OSS tools, hand-written scripts
@@ -95,8 +92,8 @@ Unix tools \textbullet{} AWS/Digital Ocean and other cloud services \textbullet{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \vspace{4mm} % Hacky fix for awkward extra vertical space
-\section{Talks}
-\href{https://github.com/icyphox/cyware19/raw/master/slides/Cyware RE Workshop.pdf}{\bf\location{Intro to Reverse Engineering}} — Cyware '19
+\section{Disclosures}
+{\bf\location{CVE-2019-13143}} — FB50 Smart Lock
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
@@ -112,14 +109,23 @@ Unix tools \textbullet{} AWS/Digital Ocean and other cloud services \textbullet{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\runsubsection{Sector443}
+\descript{Security Researcher}
+\location{September 2018 - Present | Chennai, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Research in hardware, embedded security and privacy
+\item Building open source security tools
+\end{tightemize}
+\sectionsep
+
 \runsubsection{SecureLayer7}
 \descript{IoT Security Research Intern}
-\location{June 2019 - Present | Pune, IN}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{June 2019 - July 2019 | Pune, IN}
 \begin{tightemize}
 \item ARM, MIPS security research, exploitation
 \item Firmware extraction, reverse engineering and exploitation (routers)
-\item Hardware security: UART/JTAG via BusPirate, Bluetooth (BLE), Zigbee
+\item Hardware security: UART/JTAG via BusPirate, Bluetooth (BLE)
 \end{tightemize}
 \sectionsep
 
@@ -129,15 +135,6 @@ Unix tools \textbullet{} AWS/Digital Ocean and other cloud services \textbullet{
 \begin{tightemize}
 \item Penetration testing web applications, report generation
 \item Built and deployed a chatbot to collect event data for analytics
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Sector443}
-\descript{Security Researcher}
-\location{September 2018 - Present | Chennai, IN}
-\begin{tightemize}
-\item Performing active research in DFIR, hardware security and reverse engineering
-\item Building open source security tools	
 \end{tightemize}
 \sectionsep
 
@@ -165,6 +162,13 @@ Unix tools \textbullet{} AWS/Digital Ocean and other cloud services \textbullet{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{PROJECTS}
+
+\runsubsection{pwnfb50}
+\descript{Exploit for CVE-2019-13143}
+\location{Python}
+The exploit for the FB50 smart lock. Requires only the lock's MAC address. \\
+\sectionsep
+
 \runsubsection{vite}
 \descript{Minimal static site generator}
 \location{Python, Jinja2}
@@ -187,12 +191,6 @@ A framework built in the Nim programming language to construct ZSH prompts
 \descript{Unique string ID generator}
 \location{Nim}
 A secure, URL friendly, unique string ID generator built in Nim
-\sectionsep
-
-\runsubsection{crap}
-\descript{A safer alternative to `rm`}
-\location{Nim}
-A CLI tool to safely delete files by moving them to the system's Trash
 \sectionsep
 
 \end{minipage} 
