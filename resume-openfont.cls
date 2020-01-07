@@ -25,8 +25,8 @@
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Path = fonts/,BoldFont=RobotoSlab-Regular]{RobotoSlab-Regular}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/]{RobotoSlab-Light}
+\setmainfont[Color=primary, Path = fonts/,BoldFont=Inter-Regular]{Inter-Regular}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/]{Inter-Light-BETA}
 
 % Date command
 \usepackage[absolute]{textpos}
@@ -34,7 +34,7 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/]{RobotoSlab-Light}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/]{Inter-Light-BETA}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on \today
 \end{textblock}}
 
@@ -42,12 +42,12 @@ Last Updated on \today
 \newcommand{\namesection}[3]{
 \centering{
 \fontsize{40pt}{60pt}
-\fontspec[Path = fonts/]{RobotoSlab-Bold}\selectfont #1 
-\fontspec[Path = fonts/]{RobotoSlab-Regular}\selectfont #2
+\fontspec[Path = fonts/]{Inter-Bold}\selectfont #1 
+\fontspec[Path = fonts/]{Inter-Regular}\selectfont #2
 } \\[5pt]
 \centering{
 \color{headings}
-\fontspec[Path = fonts/]{RobotoSlab-Regular}\fontsize{11pt}{14pt}\selectfont #3}
+\fontspec[Path = fonts/]{Inter-Regular}\fontsize{11pt}{14pt}\selectfont #3}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
 }
@@ -60,22 +60,22 @@ Last Updated on \today
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/]{RobotoSlab-Bold}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/]{Inter-Bold}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
-	\color{subheadings}\fontspec[Path = fonts/]{RobotoSlab-Regular}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+	\color{subheadings}\fontspec[Path = fonts/]{Inter-Regular}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/]{RobotoSlab-Regular}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/]{Inter-Regular}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/]{RobotoSlab-Regular}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/]{Inter-Regular}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/]{RobotoSlab-Regular}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/]{Inter-Regular}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
