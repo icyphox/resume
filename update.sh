@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-scp resume.pdf fern:~/www/icy/uploads/resume.pdf
+rsync -avz resume.pdf fern:~/www/icy/uploads/resume.pdf
