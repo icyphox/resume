@@ -1,0 +1,25 @@
+résumé
+------
+
+Run:
+
+    xelatex -interaction=nonstopmode resume.tex
+
+post-receive git hook:
+
+    #!/bin/sh
+
+    git clone ~/resume .build/resume
+    cd .build/resume
+    xelatex -interaction=nonstopmode resume.tex
+    rsync -avz resume.pdf fern:~/www/icy/uploads/resume.pdf
+
+    printf "Done uploading! https://x.icyphox.sh/resume.pdf\n"
+    printf "Cleaning up build directory\n"
+    rm -rf ~/.build/resume
+
+
+CREDITS
+
+Inter font: https://rsms.me/inter
+Deedy Resume: https://github.com/deedy/Deedy-Resume
