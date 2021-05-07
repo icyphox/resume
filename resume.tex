@@ -36,10 +36,6 @@
 \location{Grad. May 2017 | Bangalore, IN}  
 \sectionsep
 
-\subsection{Narayana e-Techno}
-\descript{Grade 10}
-\location{Grad. May 2015 | Bangalore, IN}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
@@ -63,23 +59,23 @@ LinkedIn/\href{https://www.linkedin.com/in/icyphox}{\bf icyphox} \\
 \sectionsep
 
 
-\vspace{-2mm} % Hacky fix for awkward extra vertical space
+\vspace{2mm} % Hacky fix for awkward extra vertical space
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
 \subsection{Programming}
-Python \textbullet{} C \textbullet{} Nim \textbullet{} Shell
+Python \textbullet{} C \textbullet{} Nim \textbullet{} Shell \\
+\textbullet{} Go \textbullet{} Lua
 \sectionsep
 \subsection{Security}
-Metasploit \textbullet{} Burp Suite \textbullet{} other OSS tools, hand-written scripts
+Metasploit \textbullet{} Burp Suite \textbullet{}
+radare2 \textbullet{} gdb \textbullet{}
 \sectionsep
-\subsection{Reverse Engineering}
-radare2 \textbullet{} IDA Pro \textbullet{} Ghidra \textbullet{} gdb
-\sectionsep
-\subsection{Forensics}
-Filesystems/Data Recovery \textbullet{} The Sleuth Kit \textbullet{} Volatility
+\subsection{Infrastructure}
+Kubernetes (GKE) \textbullet{} Hashicorp Vault \\
+\textbullet{} Prometheus
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,6 +86,7 @@ Filesystems/Data Recovery \textbullet{} The Sleuth Kit \textbullet{} Volatility
 \section{Disclosures}
 {\bf\location{CVE-2019-13143}} — FB50 Smart Lock
 
+\vspace{4mm} % Hacky fix for awkward extra vertical space
 \section{Talks}
 {\bf\location{Cyware 2019}} — Intro to RE \\
 {\bf\location{PyCon India 2019}} — "Smart lock? Nah dude."
@@ -110,23 +107,27 @@ Filesystems/Data Recovery \textbullet{} The Sleuth Kit \textbullet{} Volatility
 \section{Experience}
 
 \runsubsection{DeepSource}
-\descript{Site Reliability Engineer Intern}
+\descript{Site Reliability Engineer}
 \location{January 2021—Present | Bangalore, IN}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-%\begin{tightemize}
-    % work info here
-%\end{tightemize}
+\begin{tightemize}
+\item Setting up an event driven observability pipeline (Kafka, Telegraf (statsd), InfluxDB)
+\item Monitoring and alerting
+\item Improving analysis security contexts
+\item Internal security tooling and practices (SOC2)
+\end{tightemize}
 \sectionsep
 
 
 \runsubsection{CometChat}
-\descript{Engineering Intern}
+\descript{Infrastructure Engineer}
 \location{July 2020–December 2020 | Bangalore, IN}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developing infrastructure and platform tooling
 \item XMPP internals, websockets (RFC7395)
 \item Scalable deployments of infrastructure using Docker Swarm and K8s
+\item Wrote a high performance websocket proxy/relay in Nim
 \end{tightemize}
 \sectionsep
 
@@ -137,15 +138,6 @@ Filesystems/Data Recovery \textbullet{} The Sleuth Kit \textbullet{} Volatility
 \item ARM, MIPS security research, exploitation
 \item Firmware extraction, reverse engineering and exploitation (routers)
 \item Hardware security: UART/JTAG via BusPirate, Bluetooth (BLE)
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Heartfulness Foundation}
-\descript{Software Engineer | Pentester}
-\location{December 2018–February 2019 | Remote}
-\begin{tightemize}
-\item Penetration testing web applications, report generation
-\item Built and deployed a chatbot to collect event data for analytics
 \end{tightemize}
 \sectionsep
 
@@ -171,11 +163,10 @@ Filesystems/Data Recovery \textbullet{} The Sleuth Kit \textbullet{} Volatility
 Plain-text powered, slide deck presentation tool written in pure bash. \\
 \sectionsep
 
-
-\runsubsection{icyrc}
-\descript{IRC client}
-\location{C, ncurses}
-A minimal IRC client written in C and ncurses. \\
+\runsubsection{janny}
+\descript{Kubernetes resource cleaner}
+\location{Python}
+Clean up Kubernetes resources after a set TTL. \\
 \sectionsep
 
 \runsubsection{pwnfb50}
@@ -186,14 +177,14 @@ The exploit for the FB50 smart lock. Requires only the lock's MAC address. \\
 
 \runsubsection{vite}
 \descript{Minimal static site generator}
-\location{Python, Jinja2}
-A simple tool to rapidly generate static websites using only Markdown \\
+\location{Go}
+A simple tool to rapidly generate static websites using only Markdown. \\
 \sectionsep
 
-\runsubsection{nicy}
-\descript{ZSH prompt building framework}
+\runsubsection{wsabi}
+\descript{Websocket proxy}
 \location{Nim}
-A framework built in the Nim programming language to construct ZSH prompts
+A websocket proxy/relay that sends stats to statsd, written in Nim.
 \sectionsep
 
 
