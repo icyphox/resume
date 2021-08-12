@@ -26,7 +26,7 @@
 % Set main fonts
 \usepackage{fontspec}
 \setmainfont[Color=primary, Path = fonts/,BoldFont=Inter-Regular]{Inter-Regular}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/]{Inter-Light-BETA}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/]{Inter-Light}
 
 % Date command
 \usepackage[absolute]{textpos}
@@ -34,7 +34,7 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/]{Inter-Light-BETA}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/]{Inter-Light}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on \today
 \end{textblock}}
 
