@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rsync -avz resume.pdf fern:~/www/icy/uploads/resume.pdf
+scp -v resume.pdf denna:/var/www/htdocs/x.icyphox.sh/uploads/resume.pdf

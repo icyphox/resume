@@ -6,10 +6,9 @@
  
 \begin{document}
 
-\lastupdated
-
 \namesection{Anirudh}{Oppiliappan}{ \urlstyle{same}\href{https://icyphox.sh}{icyphox.sh} | 
-\href{mailto:anirudh@oppiliappan.com}{anirudh@oppiliappan.com}
+\href{mailto:anirudh@oppiliappan.com}{anirudh@oppiliappan.com} |
+Helsinki, Finland
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,10 +46,10 @@ LinkedIn/\href{https://www.linkedin.com/in/icyphox}{\bf icyphox} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Interests}
-\location{Security}
-\location{Privacy}
-\location{Free/Libre Software}
+\location{Distributed Systems}
 \location{Infrastructure}
+\location{Observability}
+\location{Cloud-native Security}
 \sectionsep
 
 
@@ -71,7 +70,7 @@ radare2 \textbullet{} gdb
 \subsection{Infrastructure}
 Kubernetes (GKE, bare metal) \textbullet{} Hashicorp Vault \\
 \textbullet{} Prometheus  \textbullet{} Falco \\
-\textbullet{} Helm
+\textbullet{} Helm \textbullet{} OpenTelemetry
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,13 +101,30 @@ Kubernetes (GKE, bare metal) \textbullet{} Hashicorp Vault \\
 
 \section{Experience}
 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{UpCloud}
+\descript{SRE Kubernetes Engineer}
+\location{January 2023-Present | Helsinki, FI}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item End-to-end observability and logging pipelines
+\item Internal tooling and in-house Kubernetes operators (Go)
+\item Control-plane provider for running multi-tenant K8s CPs as pods
+\item Tech: Kubernetes (Cluster API), kubebuilder, Prometheus, Vector, Grafana
+\end{tightemize}
+\sectionsep
+
+
 \runsubsection{Ory}
 \descript{Site Reliability Engineer}
-\location{January 2022-Present}
+\location{January 2022-December 2022}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-%\begin{tightemize}
-%    % Add work here
-%\end{tightemize}
+\begin{tightemize}
+\item Centralized tracing infrastructure using OpenTelemetry, Grafana Tempo
+\item Centralized multi-cluster logging using Loki
+\item Edge caching of latency critical endpoints using Cloudflare Workers
+\item Open source contributions to all major Ory projects (Go)
+\end{tightemize}
 \sectionsep
 
 
@@ -125,43 +141,17 @@ Kubernetes (GKE, bare metal) \textbullet{} Hashicorp Vault \\
 \sectionsep
 
 
-\runsubsection{CometChat}
-\descript{Infrastructure Engineer}
-\location{July 2020–December 2020 | Bangalore, IN}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Developing infrastructure and platform tooling
-\item XMPP internals, websockets (RFC7395)
-\item Scalable deployments of infrastructure using Docker Swarm and K8s
-\item Wrote a high performance websocket proxy/relay in Nim
-\end{tightemize}
-\sectionsep
-
-\runsubsection{SecureLayer7}
-\descript{Security Research Intern}
-\location{June 2019–July 2019 | Pune, IN}
-\begin{tightemize}
-\item ARM, MIPS security research, exploitation
-\item Firmware extraction, reverse engineering and exploitation (routers)
-\item Hardware security: UART/JTAG via BusPirate, Bluetooth (BLE)
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Sensei Technologies}
-\descript{Security Engineer Intern}
-\location{May 2018–June 2018 | Bangalore, IN}
-\begin{tightemize}
-\item Web application security and vulnerability assesment
-\item DevSecOps and automation — integrating basic web security assesment into the CI pipeline
-\item Providing long-term solutions for mitigation of security threats
-\end{tightemize}
-\sectionsep
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{PROJECTS}
+
+\runsubsection{legit}
+\descript{Web frontend for Git}
+\location{Go}
+A web frontend for git, written in Go.
+\sectionsep
 
 \runsubsection{shlide}
 \descript{Slide deck presentation tool}
@@ -187,11 +177,6 @@ An email-based bookmarking service using OpenSMTPD and Go. \\
 A simple tool to rapidly generate static websites using only Markdown. \\
 \sectionsep
 
-\runsubsection{wsabi}
-\descript{Websocket proxy}
-\location{Nim}
-A websocket proxy/relay that sends stats to statsd, written in Nim.
-\sectionsep
 
 
 \end{minipage} 
