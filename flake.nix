@@ -1,16 +1,23 @@
 {
   description = "Tools to build my résumé";
 
-  outputs = { self, nixpkgs }: {
-    devShell.x86_64-linux =
-      let
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      in
-      pkgs.mkShell {
-        src = null;
-        nativeBuildInputs = with pkgs; [
-            tectonic
-        ];
-      };
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
   };
+
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem
+      (system:
+        let
+          pkgs = import nixpkgs {
+            inherit system;
+          };
+        in
+        with pkgs; {
+          devShells.default = mkShell {
+            buildInputs = [ tectonic ];
+          };
+        }
+      );
 }
