@@ -1,23 +1,52 @@
 {
-  description = "Tools to build my résumé";
+  description = "site";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
-  };
+  inputs.nixpkgs.url = "github:nixos/nixpkgs";
 
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem
-      (system:
+  outputs =
+    { self
+    , nixpkgs
+    ,
+    }:
+    let
+      supportedSystems = [
+        "x86_64-linux"
+        "x86_64-darwin"
+        "aarch64-linux"
+        "aarch64-darwin"
+      ];
+      forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
+      nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; });
+    in
+    {
+      devShells = forAllSystems (
+        system:
         let
-          pkgs = import nixpkgs {
-            inherit system;
-          };
+          pkgs = nixpkgsFor.${system};
         in
-        with pkgs; {
-          devShells.default = mkShell {
-            buildInputs = [ tectonic ];
+        {
+          default = pkgs.mkShell {
+            buildInputs = [
+              pkgs.tectonic
+            ];
           };
         }
       );
+
+      apps = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgsFor.${system};
+        in
+        {
+          default = {
+            type = "app";
+            program = "${pkgs.writeShellScriptBin "s3-sync" ''
+                #!/usr/bin/env bash
+                ${pkgs.awscli2}/bin/aws s3 cp resume.pdf s3://files/resume.pdf
+            ''}/bin/s3-sync";
+          };
+        }
+      );
+    };
 }
